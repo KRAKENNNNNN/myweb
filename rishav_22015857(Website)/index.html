@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Rishav Regmi" date="2022-05-30" />
+    <meta language="English" />
+    <meta website-publish-date="2022-06-01" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>IShop(Homepage)</title>
+  </head>
+
+  <body>
+    
+    <!-- This is a nav section of the webpage -->
+    <div class="navbar">
+      <ul>
+        <li><img class="logo" src="img/loggo.png" alt="logo" /></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="./pages/product.html">Product</a></li>
+        <li><a href="./pages/blog.html">Blog</a></li>
+        <li><a href="./pages/research.html">Research</a></li>
+        <li><a href="./pages/contactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- This is the headline and subheadline section of the page -->
+    <section id="another">
+      <h1 style="margin-right: 10px">Find</h1>
+      <h2>Everything You Need</h2>
+      <h2>In One Place</h2>
+      <p style="padding-left: 15px; color: white;"><b> From 05/24 to 06/04.</b></p>
+      <h3
+        style="padding-left: 15px; color: white;"><b>Hurry up. 70% cashback on first purchase</b>
+    </h3>
+      <button class="normal">
+        <a href="./pages/product.html">Shop Now</a>
+      </button>
+    </section>
+    <br><br><br>
+
+    <style type="text/css">
+      .combination{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #171312;
+      }
+      #img 
+        {
+        width: 58%;
+        margin-left: 2%;
+        height: 60vh;
+        background-color: indigo;
+        margin-bottom: 2rem;
+        }
+        img{
+        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        .content{
+          padding: 2%;
+        }
+    </style>
+  </head>
+      <div class="combination">
+      <div id="img">
+        <img src="./pic3.jpg">
+      </div>
+      <div class="content">
+        <h3 style="color: goldenrod; font-size: 40px;">Need an upgrade? <br>
+          Shop from IShop
+        </h3>
+      </div>
+      </div>
+  <!-- This is internal javascript -->
+    <script>
+      // sliding images
+      var images = ['./pic1.jpg', './pic2.jpg','./pic3.jpg',];
+  
+      var x = 0;
+      var imgs = document.getElementById('img');
+      setInterval(slider, 3000);
+  
+      function slider() {
+  
+        if (x < images.length) 
+          {
+          x = x + 1;
+          } 
+  
+        else 
+          {
+          x = 1;
+          }
+  
+  
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+      }
+    </script>
+    <!-- This is the home page content -->
+    <section id="dosro" class="section2_1">
+      <div style="background-color: #222; width: 100%;">
+      <h2 style="color: whitesmoke"><u>New Arrivals</u></h2></div>
+      <div class="pro-container">
+        <div id="pro">
+          <div class="ige">
+            <a href="./pages/product.html"
+              ><img
+                src="./img/s22Ultra.png"
+                alt="SamsungS22"
+                height="272px"
+                width="272px"
+            /></a>
+          </div>
+          <div class="desc">
+            <p><b> Samsung Galaxy S22 Ultra 5G</b></p>
+            <h5>Black 256GB</h5>
+          </div>
+        </div>
+
+        <div id="pro">
+          <div class="ige">
+            <img
+              src="./img/sony xperia.jpg"
+              alt="Sony Xperia 1 IV"
+              height="272px"
+              width="272px"
+            />
+          </div>
+          <div class="desc">
+            <p><b> Sony Xperia 1 IV</b></p>
+            <h5>512GB Sony WF-1000XM4</h5>
+          </div>
+        </div>
+
+        <div id="pro">
+          <div class="ige">
+            <img
+              src="./img/googlePixel6.webp"
+              alt="Google Pixel 6 Pro"
+              height="200px"
+              style="padding: 33px 0"
+            />
+          </div>
+          <div class="desc">
+            <p><b> Google Pixel 6 Pro </b></p>
+            <h5>White 256GB,</h5>
+          </div>
+        </div>
+
+        <div id="pro">
+          <div class="ige">
+            <img src="./img/iPhone-13.webp" alt="iphone 13 pro max" />
+          </div>
+          <div class="desc">
+            <p><b> Iphone 13 Pro Max </b></p>
+            <h5>Blue 128 GB</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tesro" class="section2_3">
+      <h4>For Personalized Recommendations</h4>
+      <button class="normal" style="border: solid black;">
+        <a
+          href="./pages/contactUs.html"
+          style="text-decoration: none; color: black"
+          >Sign in</a
+        >
+      </button>
+      <style>
+        #tesro a:hover{
+          color: rgb(61, 129, 61);
+          text-decoration: none;
+          transition: 0.4s ease;
+        }
+      </style>
+      <h4>New Customer? <a href="./pages/contactUs.html">Click Here</a></h4>
+    </section>
+
+    <section id="newsletter">
+      <div class="newstext">
+        <h4 style="  font-size: 21px;
+        font-weight: 700; color: white; padding-left: 15px">Sign up for Newsletters</h4>
+        <p style="font-size: 15px;
+        font-weight: 700; color: whitesmoke; padding-left: 15px">Get E-mail updates about our latest products and <span>special offers.</span></p>
+      </div>
+      <div class="searchbox">
+        <input type="text" placeholder="Your email address">
+        <button class="normal"><a href="./pages/contactUs.html" style="text-decoration: none; color: black">Sign up</a></button>
+      </div>
+    </section>
+    <!-- This is the footer section -->
+    <footer class="last">
+      <div class="col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>BijayChowk, Pingalasthaan, Kathmandu, Nepal</p>
+        <p><strong>Phone:</strong>+977-9876556743,081-423765</p>
+        <p><strong>Hours:</strong>10:00 - 22:00. Mon - Friday</p>
+      </div>
+      
+      <div class="col">
+        <h4>About</h4>
+        <a href="">About us</a>
+        <a href="">Delivery details</a>
+        <a href="">Privacy policy</a>   
+        <a href="./pages/blog.html">Blog</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="./pages/contactUs.html">Sign in</a>
+        <a href="">My cart</a>
+        <a href="">Favourits</a>  
+        <a href="">Help</a> 
+      </div>
+      <div class="install">
+        <h4>Downl0ad the app </h4>
+        <p style="color: grey;">From Play Store or App Store</p>
+        <div class="row">
+          <a href="https://play.google.com/store/games"><img style="border: 1px solid grey;
+          border-radius: 6px; cursor: pointer; width: 48%;" src="../img/play.jpg" alt=""></a>
+          <img style="border: 1px solid gray;
+          border-radius: 6px; cursor: pointer; width: 48%;" src="../img/app.jpg" alt="">
+        </div>
+          <p style="color: grey; padding-top: 20px;">We recieve</p>
+          <img src="../img/pay.png" style="width: 90%;
+          height: 11%;" alt="">
+      </div>
+    </footer>
+    <div class="copyright">©2022. Rishav-np01nt4s220034@islingtoncollege.edu.np</div>
+    
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,395 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+/*  for the navigation bar */
+.navbar {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #171312;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.navbar ul {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar li {
+  width: 7%;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  color: goldenrod;
+}
+
+.logo {
+  width: 70%;
+  border: 3px solid goldenrod;
+  border-radius: 100px;
+}
+
+.searchbox {
+  font-size: 16px;
+}
+
+/* background image of homepage*/
+#another {
+  background-image: url(../img/yoyo.jpg);
+  overflow: hidden;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#another h2 {
+  font-size: 40px;
+  color: white;
+  padding-left: 15px;
+}
+
+#another h1 {
+  color: white;
+  font-size: 40px;
+  padding-left: 23px;
+}
+/*  for the shop now button */
+.normal {
+  font-size: 19px;
+  font-weight: 700;
+  transition: 0.3s ease;
+  background-color: goldenrod;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 30px;
+  margin-left: 20px;
+  transition: 0.2s ease;
+}
+.normal:hover {
+  box-shadow: 5px 5px 5px black;
+}
+
+#another a {
+  text-decoration: none;
+  color: #222;
+}
+
+.myDiv {
+  display: flex;
+  border: 5px outset goldenrod;
+  background-color: black;
+  text-align: center;
+}
+
+.section2_1 {
+  padding: 40px 30px;
+  border: 2px solid;
+}
+
+.section2_2 {
+  margin: 40px 0;
+}
+
+.dos_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feat {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.taxi {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* new arrival section */
+
+#dosro h2 {
+  font-size: 45px;
+  text-align: center;
+}
+.pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#pro {
+  width: 20%;
+  padding: 10px 12px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px grey;
+  margin: 15px 20px;
+  transition: 0.2s ease;
+}
+
+#pro:hover {
+  box-shadow: 5px 5px 5px black;
+}
+
+.ige img {
+  width: 100%;
+  border-radius: 20px;
+  height: 37vh;
+}
+
+.desc p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.desc h5 {
+  text-align: center;
+}
+
+#tesro h4 {
+  text-align: center;
+}
+
+#tesro button {
+  margin-left: 716px;
+}
+/*  for the newsletter section */
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #171312;
+}
+#newsletter p span {
+  color: goldenrod;
+}
+
+#newsletter input {
+  font-size: 16px;
+}
+
+#newsletter button {
+  white-space: nowrap;
+}
+/*  for footer section */
+.last {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.last .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.last h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.last p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+.last a {
+  font-size: 13px;
+  text-decoration: none;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.last .follow {
+  margin-top: 20px;
+}
+
+.last .follow i {
+  color: gray;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.last .install .img {
+  margin: 10px 0 15px 0;
+}
+
+.last .follow i:hover,
+.last a:hover {
+  color: #1d2228;
+}
+/*  for the copyright section */
+.copyright {
+  text-align: center;
+  color: rgb(79, 79, 79);
+}
+/*  for the blog content  */
+#banner_blog {
+  background: url(../img/technology.png);
+  height: 56vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.banner {
+  background-color: #171312;
+  width: 100%;
+  padding: 0 0 25px;
+}
+.banner h1 {
+  font-size: 45px;
+  color: goldenrod;
+  text-align: center;
+}
+
+.bannerr1 {
+  background-color: #171312;
+  width: 60%;
+  /* padding: 0 20px 5px;
+border-radius: 5px; */
+}
+
+.bannerr1 img,
+.bannerr2 img {
+  height: 300px;
+  width: 300px;
+}
+
+.bannerr2 {
+  background-color: #171312;
+  justify-content: flex-end;
+  margin-left: 600px;
+  width: 60%;
+  /* padding: 0 20px 5px;
+border-radius: 25px; */
+}
+
+.bannerr1 h1,
+.bannerr2 h1 {
+  font-size: 35px;
+  color: goldenrod;
+  text-align: center;
+  /* justify-content: center; */
+  /* padding-left: 500px;
+  padding-top: 50px;
+  padding-bottom: 0px; */
+}
+
+#banner_blog p {
+  font-size: 40px;
+  color: whitesmoke;
+  padding-left: 575px;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+/*  for the research section */
+.resimga {
+  display: flex;
+  justify-content: space-around;
+  background-color: #171312;
+}
+
+.resimgb {
+  display: flex;
+  justify-content: space-around;
+}
+
+.restxta {
+  display: flex;
+  color: goldenrod;
+  background-color: #171312;
+}
+
+.restxtb {
+  display: flex;
+}
+
+.res {
+  background-color: burlywood;
+}
+/*  for the contact page */
+.pura {
+  background-image: url(../img/cont.jpg);
+  background-size: cover;
+}
+/*  for the form section */
+.mainform {
+  max-width: 470px;
+  margin: auto;
+  padding: 207px 100px 120px;
+  box-shadow: 2 2 3px 2px #0000002e;
+  background-color: whitesmoke;
+}
+
+.forform {
+  padding: 10px;
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  width: 95%;
+}
+
+.input {
+  border-radius: 0.6rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.input[type="text"] {
+  color: black;
+  font-weight: bolder;
+}
+
+input[type="email"] {
+  color: black;
+  font-weight: bolder;
+}
+
+textarea {
+  color: black;
+  font-weight: bolder;
+}
+
+input[type="submit" i] {
+  cursor: pointer;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  padding: 3px 192px;
+  border-width: 8px;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Rishav Regmi" date="2022-05-30" />
+    <meta language="English" />
+    <meta website-publish-date="2022-06-01" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Contactpage</title>
+  </head>
+
+  <body>
+    <!-- This is a nav section of the webpage -->
+    <div class="navbar">
+      <ul>
+        <li><img class="logo" src="../img/loggo.png" alt="logo" /></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./product.html">Product</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./research.html">Research</a></li>
+        <li><a class="active" href=".contactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- This is the form division of the contact page -->
+    <div class="pura">
+      <div class="mainform">
+        <div class="forform">
+          <form name="messageForm" onsubmit="return validate()">
+            <span id="button"
+              ><button onclick="time()" style="width: 2.7rem; height: 2rem">
+                Time
+              </button></span
+            >
+            <h1 style="text-align: center">Words from our customers</h1>
+            <br />
+            <input
+              placeholder="First Name"
+              required="required"
+              class="input"
+              type="text"
+              name="fname"
+              id="name"
+              style="width: 435px; line-height: 35px"
+            />
+            <br />
+            <br />
+            <input
+              placeholder="Last Name"
+              required="required"
+              class="input"
+              type="text"
+              name="lname"
+              style="width: 435px; line-height: 35px"
+            />
+            <br />
+            <br />
+            <input
+              placeholder="Your Email (example: username123@gmail.com)"
+              class="input"
+              id="email"
+              name="email"
+              style="width: 435px; line-height: 35px"
+            />
+            <br />
+            <br />
+            <input
+              class="input"
+              type="radio"
+              name="genderDetails"
+              value="male"
+              checked
+            />Male
+            <input
+              class="input"
+              type="radio"
+              name="genderDetails"
+              value="female"
+            />Female
+            <br />
+            <br />
+            <input
+              placeholder="+977"
+              class="input"
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+              id="phone"
+              name="phone"
+              style="width: 435px; line-height: 35px"
+            />
+            <br />
+            <br />
+
+            <label><strong>Message for us:</strong></label>
+            <br />
+            <textarea
+              rows="7"
+              cols="57"
+              name="message"
+              placeholder="Enter your message"
+              class="input"
+            ></textarea>
+            <br />
+            <br />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- This is the footer section of the page -->
+    <footer class="last">
+      <div class="col">
+        <h4>Contact</h4>
+        <p>
+          <strong>Address:</strong>BijayChowk, Pingalasthaan, Kathmandu, Nepal
+        </p>
+        <p><strong>Phone:</strong>+977-9876556743,081-423765</p>
+        <p><strong>Hours:</strong>10:00 - 22:00. Mon - Friday</p>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="">About us</a>
+        <a href="">Delivery details</a>
+        <a href="">Privacy policy</a>
+        <a href="./pages/blog.html">Blog</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="./pages/contactUs.html">Sign in</a>
+        <a href="">My cart</a>
+        <a href="">Favourits</a>
+        <a href="">Help</a>
+      </div>
+      <div class="install">
+        <h4>Downl0ad the app</h4>
+        <p style="color: grey">From Play Store or App Store</p>
+        <div class="row">
+          <a href="https://play.google.com/store/games"
+            ><img
+              style="
+                border: 1px solid grey;
+                border-radius: 6px;
+                cursor: pointer;
+                width: 48%;
+              "
+              src="../img/play.jpg"
+              alt=""
+          /></a>
+          <img
+            style="
+              border: 1px solid gray;
+              border-radius: 6px;
+              cursor: pointer;
+              width: 48%;
+            "
+            src="../img/app.jpg"
+            alt=""
+          />
+        </div>
+        <p style="color: grey; padding-top: 20px">We recieve</p>
+        <img src="../img/pay.png" style="width: 90%; height: 11%" alt="" />
+      </div>
+    </footer>
+    <div class="copyright">
+      ©2022. Rishav-np01nt4s220034@islingtoncollege.edu.np
+    </div>
+    <!-- This is internal javascript -->
+    <script type="text/javascript">
+      function time() {
+        var mytime = new Date();
+        alert(mytime);
+      }
+      function validate() {
+        var username = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var pattern =
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (username.length < 5) {
+          alert("Minimum 5 characters needed as your name ");
+          return false;
+        }
+        if (email.match(pattern)) {
+          return true;
+        } else {
+          alert("Invalid email address");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
